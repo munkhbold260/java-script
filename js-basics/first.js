@@ -46,6 +46,7 @@ console.log(number);
 // data types-> ugugdliin turul
 let number1 = 15; // ->number type
 let myString = "15"; // -> spring type   (collection of character)
+let boolean;
 
-console.org("number1", number1);
-console.org("myString", myString);
+console.log("number1", number1);
+console.log("myString", myString);
