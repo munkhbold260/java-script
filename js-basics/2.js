@@ -100,13 +100,17 @@ if (day <= 31) {
 
 //EXTRA midterm- uud n dund 25% iar noloolno harin final dun buh dungiin  50% d noloolno.
 //console.log(((mid1 + mid2) / 2 + fin) / 2);
-let mid1 = 100;
-let mid2 = 100;
-let fin = 50;
+let mid1 = 70;
+let mid2 = 70;
+let fin = 10;
 
-if (((mid1 + mid2) / 2 + fin) / 2 < 60) {
-  console.log("F dun");
-} else if ((mid1 + mid2 + fin) / 3 < 70) console.log("D dun");
-else if ((mid1 + mid2 + fin) / 3 < 80) console.log("C dun");
-else if ((mid1 + mid2 + fin) / 3 < 90) console.log("B dun");
-else if ((mid1 + mid2 + fin) / 3 <= 100) console.log("A dun");
+if (((mid1 + mid2) / 2 + fin) / 2 < 60)
+  console.log("F", ((mid1 + mid2) / 2 + fin) / 2);
+else if (((mid1 + mid2) / 2 + fin) / 2 < 70)
+  console.log("D", ((mid1 + mid2) / 2 + fin) / 2);
+else if (((mid1 + mid2) / 2 + fin) / 2 < 80)
+  console.log("C", ((mid1 + mid2) / 2 + fin) / 2);
+else if (((mid1 + mid2) / 2 + fin) / 2 < 90)
+  console.log("B", ((mid1 + mid2) / 2 + fin) / 2);
+else if (((mid1 + mid2) / 2 + fin) / 2 <= 100)
+  console.log("A", ((mid1 + mid2) / 2 + fin) / 2);
