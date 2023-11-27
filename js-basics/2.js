@@ -50,31 +50,31 @@ if (myAge >= ageLimit) {
   console.log("not allowed to enter", myAge);
 }
 
-let day = 365;
+let day = 366;
 
-if (day <= 31) {
+if (day < 32) {
   console.log("Jan");
-} else if (day <= 59) {
+} else if (day < 60) {
   console.log("Feb");
-} else if (day <= 90) {
+} else if (day < 91) {
   console.log("Mar");
-} else if (day <= 120) {
+} else if (day < 121) {
   console.log("Apr");
-} else if (day <= 151) {
+} else if (day < 152) {
   console.log("May");
-} else if (day <= 181) {
+} else if (day < 182) {
   console.log("June");
-} else if (day <= 212) {
+} else if (day < 213) {
   console.log("July");
-} else if (day <= 243) {
+} else if (day < 244) {
   console.log("Aug");
-} else if (day <= 273) {
+} else if (day < 274) {
   console.log("Sep");
-} else if (day <= 304) {
+} else if (day < 305) {
   console.log("Oct");
-} else if (day <= 334) {
+} else if (day < 335) {
   console.log("Nov");
-} else if (day <= 365) {
+} else if (day < 366) {
   console.log("Dec");
 } else {
   console.log("Other");
@@ -88,29 +88,39 @@ if (day <= 31) {
 //81-90 bol B...
 //91-100bol A
 
-// let mid1 = 100;
-// let mid2 = 100;
-// let fin = 100;
-// if ((mid1 + mid2 + fin) / 3 < 60) {
-//   console.log("F dun");
-// } else if ((mid1 + mid2 + fin) / 3 < 70) console.log("D dun");
-// else if ((mid1 + mid2 + fin) / 3 < 80) console.log("C dun");
-// else if ((mid1 + mid2 + fin) / 3 < 90) console.log("B dun");
-// else if ((mid1 + mid2 + fin) / 3 <= 100) console.log("A dun");
+// let midterm1 = 100;
+// let midterm2 = 100;
+// let final = 1000;
+// if ((midterm1 + midterm2 + final) / 3 < 60) {
+//   console.log("F");
+// } else if ((midterm1 + midterm2 + final) / 3 < 70) {
+//   console.log("D");
+// } else if ((midterm1 + midterm2 + final) / 3 < 80) {
+//   console.log("C");
+// } else if ((midterm1 + midterm2 + final) / 3 < 90) {
+//   console.log("B");
+// } else if ((midterm1 + midterm2 + final) / 3 <= 100) {
+//   console.log("A", (midterm1 + midterm2 + final) / 3);
+// } else {
+//   console.log("other");
+// }
 
 //EXTRA midterm- uud n dund 25% iar noloolno harin final dun buh dungiin  50% d noloolno.
 //console.log(((mid1 + mid2) / 2 + fin) / 2);
-let mid1 = 70;
-let mid2 = 70;
-let fin = 10;
+let midterm1 = 70;
+let midterm2 = 70;
+let final = 70;
 
-if (((mid1 + mid2) / 2 + fin) / 2 < 60)
-  console.log("F", ((mid1 + mid2) / 2 + fin) / 2);
-else if (((mid1 + mid2) / 2 + fin) / 2 < 70)
-  console.log("D", ((mid1 + mid2) / 2 + fin) / 2);
-else if (((mid1 + mid2) / 2 + fin) / 2 < 80)
-  console.log("C", ((mid1 + mid2) / 2 + fin) / 2);
-else if (((mid1 + mid2) / 2 + fin) / 2 < 90)
-  console.log("B", ((mid1 + mid2) / 2 + fin) / 2);
-else if (((mid1 + mid2) / 2 + fin) / 2 <= 100)
-  console.log("A", ((mid1 + mid2) / 2 + fin) / 2);
+if (((midterm1 + midterm2) / 2 + final) / 2 < 60) {
+  console.log("F", ((midterm1 + midterm2) / 2 + final) / 2);
+} else if (((midterm1 + midterm2) / 2 + final) / 2 < 70) {
+  console.log("D", ((midterm1 + midterm2) / 2 + final) / 2);
+} else if (((midterm1 + midterm2) / 2 + final) / 2 < 80) {
+  console.log("C", ((midterm1 + midterm2) / 2 + final) / 2);
+} else if (((midterm1 + midterm2) / 2 + final) / 2 < 90) {
+  console.log("B", ((midterm1 + midterm2) / 2 + final) / 2);
+} else if (((midterm1 + midterm2) / 2 + final) / 2 <= 100) {
+  console.log("A", ((midterm1 + midterm2) / 2 + final) / 2);
+} else {
+  console.log("other");
+}
