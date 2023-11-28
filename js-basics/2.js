@@ -1,26 +1,3 @@
-// let myAge = 20;
-// let ageLimit = 21;
-// if (myAge >= ageLimit) {
-//   console.log("allowed to enter", myAge);
-// } else {
-//   console.log("not allowed to enter", myAge);
-// }
-
-// let myBirthYear = 1990;
-
-// console.log(2023 - myBirthYear);
-
-// let myNumber = 30;
-// console.log("myNumber=", myNumber);
-
-// // data types-> ugugdliin turul
-// let number1 = 15;   // ->number type
-// let myString = "15";   // -> spring type   (collection of character)
-// let myBool = false;  //boolean type
-
-// console.org("number1", number1);
-// console.org("myString", myString);
-
 let days = 6;
 if (days == 1) {
   console.log("monday");
@@ -50,7 +27,7 @@ if (myAge >= ageLimit) {
   console.log("not allowed to enter", myAge);
 }
 
-let day = 366;
+let day = 365;
 
 if (day < 32) {
   console.log("Jan");
