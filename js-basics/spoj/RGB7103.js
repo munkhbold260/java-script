@@ -14,18 +14,12 @@
 // 3
 
 function math(a, b, c) {
-  if (a < b  c) {
+  if ((a > b, a > c)) {
     console.log(a);
-  } else if (a > b < c) {
-    console.log(a);
-  } else if (a < b > c) {
+  } else if ((a < b, b > c)) {
     console.log(b);
-  } else if (a > c < b) {
-    console.log(b);
-  } else if (a < b < c) {
-    console.log(c);
-  } else if (a > b < c) {
+  } else if ((a < c, c > b)) {
     console.log(c);
   }
 }
-math(2, 4, 3);
+math(10, 4, 8);
