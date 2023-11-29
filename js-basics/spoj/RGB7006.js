@@ -15,7 +15,7 @@
 // 27
 
 function funct(x) {
-  return x * x * 4 - x * 3 + 5;
+  y = 4 * x * x - x * 3 + 5;
+  console.log(y);
 }
-let y = funct(-2);
-console.log(y);
+funct(-2);

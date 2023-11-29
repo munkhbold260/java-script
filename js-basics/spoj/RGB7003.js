@@ -1,11 +1,25 @@
-function rectangleS(a, b) {
-  return a * b;
-}
-let s = rectangleS(6, 4);
-console.log(s);
+// RGB7003 - Тэгш өнцөгт
+// Өгөгдсөн тэгш өнцөгтийн талбай ба периметрийг ол.
 
-function rectangleP(a, b) {
-  return 2 * a + 2 * b;
+// Input
+// Тэгш өнцөгтийн урт ба өргөн нь бүхэл тоон утгаар нэг мөрөнд зайгаар тусгаарлагдан өгөгдөнө.
+
+// Output
+// Талбай ба периметр зайгаар тусгаарлагдан нэг мөрөнд хэвлэгдэнэ.
+
+// Example
+// Input:
+// 6 4
+
+// Output:
+// 24 20
+
+function rectA(a, b) {
+  s = a * b;
+  p = (a + b) * 2;
+  console.log(s, "=", a, "*", b);
+  console.log(p, "=", "(", a, "+", b, ")*2");
 }
-let p = rectangleP(4, 6);
-console.log(p);
+rectA(2, 4);
+rectA(3, 4);
+rectA(5, 4);

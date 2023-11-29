@@ -13,8 +13,16 @@
 // Output:
 // 14
 
-function funct(x) {
-  return x % 1000;
+// function nemeh(too) {
+//    = too % 10;
+//   y = (too - x) / 10;
+//   console.log(y, "*", x, "=", x * y);
+// }
+// nemeh(27);
+
+function multiply(num) {
+  st = num % 10;
+  nd = (num - st) / 10;
+  console.log(st * nd);
 }
-let lastNumber = funct(27);
-console.log(lastNumber);
+multiply(27);

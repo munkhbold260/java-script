@@ -13,8 +13,8 @@
 // Output:
 // 6
 
-function funct(x) {
-  return x % 10;
+function num(x) {
+  lastNumber = x % 10;
+  console.log(lastNumber);
 }
-let lastNumber = funct(1234569);
-console.log(lastNumber);
+num(4567);

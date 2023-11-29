@@ -15,8 +15,8 @@
 // 3 20
 
 function time(num) {
-  x = num % 60;
-  y = (num - x) / 60;
-  console.log("time", y, "m", x, "s");
+  sec = num % 60;
+  min = (num - sec) / 60;
+  console.log(min, sec);
 }
-time(310);
+time(200);

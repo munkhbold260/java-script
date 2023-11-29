@@ -13,8 +13,14 @@
 // Output:
 // -2
 
-function funct(x) {
-  return x * 3 - 5;
+function funct1(x1) {
+  return x1 * 3 - 5;
 }
-let y = funct(2);
-console.log(y);
+let y1 = funct1(1);
+console.log(y1);
+
+function funct(x) {
+  y = 3 * x - 5;
+  console.log(y);
+}
+funct(1);

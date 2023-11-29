@@ -1,5 +1,21 @@
+// RGB7001 - 2 тооны нийлбэр
+// Өгөгдсөн бүхэл тооны нийлбэрийг ол.
+
+// Input
+// 2 бүхэл тоо зайгаар тусгаарлагдан нэг мөрөнд өгөгдөнө.
+
+// Output
+// 2 тооны нийлбэр.
+
+// Example
+// Input:
+// 12 23
+
+// Output:
+// 35
+
 function sum(a, b) {
-  return a + b;
+  x = a + b;
+  console.log(a, "+", b, "=", x);
 }
-let result = sum(12, 23);
-console.log(result);
+sum(12, 23);

@@ -13,8 +13,9 @@
 // Output:
 // 2
 
-function funct(x) {
-  return ((x % 100) - (x % 10)) / 10;
+function num(x) {
+  last = x % 10;
+  secondNumber = ((x - last) % 100) / 10;
+  console.log(secondNumber);
 }
-let lastNumber = funct(1234569);
-console.log(lastNumber);
+num(4567);

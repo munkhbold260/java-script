@@ -1,12 +1,23 @@
-function cubeV(a) {
-  return a * a * a;
-}
-let v = cubeV(5);
-console.log(v);
+// RGB7004 - Куб
+// Өгөгдсөн кубын эзэлхүүн ба гүйцэд гадаргуугийн талбайг ол.
 
-function cubeS(a) {
-  return a * a * 6;
-}
+// Input
+// Кубын тал бүхэл тоон утгатайгаар нэг мөрөнд өгөгдөнө.
 
-let s = cubeS(5);
-console.log(s);
+// Output
+// Кубын эзэлхүүн, гүйцэд гадаргуугийн талбай нэг мөрөнд зайгаар тусгаарлагдан хэвлэгдэнэ.
+
+// Example
+// Input:
+// 5
+
+// Output:
+// 125 150
+
+function cube(a) {
+  v = a * a * a;
+  s = a * a * 6;
+  console.log(v, "=", a, "*", a, "*", a);
+  console.log(s, "=", "(", a, "*", a, ")", "*", "6");
+}
+cube(5);
