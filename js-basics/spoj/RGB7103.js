@@ -22,4 +22,4 @@ function math(a, b, c) {
     console.log(c);
   }
 }
-math(10, 4, 8);
+math(4, 5, 2);

@@ -47,5 +47,5 @@ function findMonth(day) {
     return "DEC";
   }
 }
-let dayInText = findMonth(270);
+let dayInText = findMonth(33);
 console.log(dayInText);

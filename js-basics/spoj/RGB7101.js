@@ -22,3 +22,16 @@ function math(a, b) {
   }
 }
 math(29, 21);
+
+function math1(a1, b1) {
+  if (a1 > b1) {
+    return a1;
+  } else if (a1 < b1) {
+    return b1;
+  }
+}
+let dayI = math1(29, 21);
+console.log(dayI);
+function math2(dayI) {}
+
+//uur gazar math2 gesen function uusgelee gehed dayI gesen utgiig ahglahiin tuld let returniig ashiglaad bgaa
