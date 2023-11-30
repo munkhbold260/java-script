@@ -42,17 +42,23 @@
 // bas person bh eswel itgemjleheer bh,
 // dept ni 1 sayas baga bwal zeel garna.
 
-function loan(sal, nd, pass, per) {
-  if (sal > 0) {
-    return sal;
-  } else if (nd > 0) {
-    return nd;
-  } else if (pass > 0) {
-    return pass;
-  } else if (per > 0) {
-    return per;
-  }console.log(yes);
-  else {console.log(no)}
+function loan(salary, insurance, inperson, cred, dept, passport, identityCard) {
+  if (
+    salary > 10 &&
+    insurance > 1 &&
+    (inperson || cred) &&
+    dept < 1000000 &&
+    (passport || identityCard)
+  ) {
+    console.log("yes");
+  } else console.log("no");
 }
-let yes = loan(1, 1, 1, 0);
-
+loan(
+  11,
+  2,
+  (inperson = true),
+  (cred = true),
+  500,
+  (passport = true),
+  (identityCard = false)
+);

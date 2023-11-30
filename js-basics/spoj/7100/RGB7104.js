@@ -14,24 +14,12 @@
 // 1
 
 function math(a, b, c, d) {
-  if ((a < b, a < b, a < c)) {
+  if (a > b && a > c && a > d) {
     console.log(a);
-  } else if ((b < a, b < c, b < d)) {
+  } else if (b > a && b > c && b > d) {
     console.log(b);
-  } else if ((c < a, c < b, c < d)) {
+  } else if (c > a && c > b && c > d) {
     console.log(c);
-  } else if ((d < a, d < b, d < c)) {
-    console.log(d);
-  }
+  } else console.log(d);
 }
 math(3, 2, 1, 4);
-
-function math1(a1, b1) {
-  if (a1 > b1) {
-    return a1;
-  } else if (a1 < b1) {
-    return b1;
-  }
-}
-let dayI = math1(29, 21);
-console.log(dayI);

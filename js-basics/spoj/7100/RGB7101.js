@@ -17,18 +17,16 @@
 function math(a, b) {
   if (a > b) {
     console.log(a);
-  } else if (a < b) {
+  } else {
     console.log(b);
   }
 }
-math(29, 21);
+math(39, 31);
 
 function math1(a1, b1) {
   if (a1 > b1) {
     return a1;
-  } else if (a1 < b1) {
-    return b1;
-  }
+  } else return b1;
 }
 let dayI = math1(29, 21);
 console.log(dayI);

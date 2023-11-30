@@ -17,8 +17,6 @@
 function math(a, b) {
   if (a > b) {
     console.log(b);
-  } else if (a < b) {
-    console.log(a);
-  }
+  } else console.log(a);
 }
-math(19, 21);
+math(28, 21);
