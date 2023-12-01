@@ -14,23 +14,25 @@
 // 181
 
 function math(a, b, c, d) {
-  if (a > 80 || a < 80) {
+  let sum = 0;
+  if (a > 80) {
+    sum = sum + a;
   }
-  //   } else if (a <= 80) {
-  //     a2 = a * 0;
-  //   }
-  //   } else if (b > 80) {
-  //     bb = b*1;
-  //   } else if (c > 80) {
-  //     cc = c;
-  //   } else d > 80;
-  //   dd = d;
-  console.log(a1 * a2);
+  if (b > 80) {
+    sum = sum + b;
+  }
+  if (c > 80) {
+    sum = sum + c;
+  }
+  if (d > 80) {
+    sum = sum + d;
+  }
+  return sum;
 }
-
-math(70, 85, 96, 99);
+console.log(math(10, 10, 10, 10));
 
 // herwee a ni 80s ikh bol
 // herwee b n 80s ikh bol
 // herwee c n 80s ikh bol
+
 // herwee d n 80s ikh bol
