@@ -13,7 +13,14 @@
 // Output:
 // YES
 
-let a = 5;
+let a = 4;
 if (a < 5) {
   console.log("yes");
 } else console.log("no");
+
+function math(b) {
+  if (b > 5) {
+    console.log("ye");
+  } else console.log("nmo");
+}
+math(6);

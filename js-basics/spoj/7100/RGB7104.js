@@ -14,11 +14,11 @@
 // 1
 
 function math(a, b, c, d) {
-  if (a > b && a > c && a > d) {
+  if (a < b && a < c && a < d) {
     console.log(a);
-  } else if (b > a && b > c && b > d) {
+  } else if (b < c && b < d) {
     console.log(b);
-  } else if (c > a && c > b && c > d) {
+  } else if (c < d) {
     console.log(c);
   } else console.log(d);
 }
