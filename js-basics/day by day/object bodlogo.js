@@ -11,7 +11,7 @@
 // display[0].price = display[0].price * 0.9;
 // console.log(display);
 
-let produscts = [
+let products = [
   {
     name: "iphone12",
     price: "2000000",
@@ -84,15 +84,15 @@ let produscts = [
   },
 ];
 
-// iphone15.prices[2].price = 790;
-// display[0].price = display[0].price * 0.9;
-console.log(produscts[1].name);
-for (let i = 1; i < n; i = i + 1) console.log(i);
+// for (let num = 3; num < 7; num = num + 1) {
+//   console.log("body");
+// }
 
-var phones = ["IPhone", "Sumsung", "Nokia", "Motorola", "Huwai", "Ehlel"];
-var phone = "";
-var i;
-for (i = 0; i < phones.length; i++) {
-  phone += phones[i];
+// for (i = products[0].name; i < products[9].name; i++) {
+//   console.log(i);
+// }
+let text = "";
+for (let i = 0; i < products.length; i++) {
+  text += products[i].name;
 }
-console.log(phone);
+console.log(text);
