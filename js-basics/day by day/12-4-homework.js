@@ -23,4 +23,9 @@ let athletics = [
   { name: "dd", age: 35, score: [15, 15, 16, 26] },
   { name: "sumiya", age: 30, score: [14, 15, 20, 40] },
 ];
-console.log(athletics[1].score[0]);
+
+function findScore(score) {
+  for (let i = 0; i < athletics.length; i = i++) {}
+}
+console.log(athletics[0].score[0]);
+findScore();

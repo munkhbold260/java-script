@@ -84,15 +84,24 @@ let products = [
   },
 ];
 
-// for (let num = 3; num < 7; num = num + 1) {
-//   console.log("body");
-// }
-
-// for (i = products[0].name; i < products[9].name; i++) {
-//   console.log(i);
-// }
-let text = "";
-for (let i = 0; i < products.length; i++) {
-  text += products[i].name;
+function setSale(saleAmount) {
+  for (let i = 0; i < 10; i = i + 1) {
+    products[i].price = products[i].price * (1 - saleAmount / 100);
+  }
 }
-console.log(text);
+setSale(20);
+console.log(products);
+
+for (let i = 0; i < 10; i = i + 1) {
+  if (products[i].category == "food") {
+    console.log(products[i]);
+  }
+}
+function findByCategory(cate) {
+  for (let i = 0; i < 10; i = i + 1) {
+    if (products[i].category == cate) {
+      console.log(products[i].name);
+    }
+  }
+}
+findByCategory("car");

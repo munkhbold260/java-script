@@ -13,13 +13,27 @@
 // Output:
 // 1
 
-function math(a, b, c, d) {
-  if (a < b && a < c && a < d) {
-    console.log(a);
-  } else if (b < c && b < d) {
-    console.log(b);
-  } else if (c < d) {
-    console.log(c);
-  } else console.log(d);
+// function math(a, b, c, d) {
+//   if (a < b && a < c && a < d) {
+//     console.log(a);
+//   } else if (b < c && b < d) {
+//     console.log(b);
+//   } else if (c < d) {
+//     console.log(c);
+//   } else console.log(d);
+// }
+// math(3, 2, 1, 4);
+
+let math = [{ a: 9, b: 77 }, { a: 6 }, { a: 3 }, { a: 4 }, { a: 8 }];
+
+function findMostNumber() {
+  let mostExp = math[0].a;
+  for (let i = 1; i < math.length; i = i + 1) {
+    if (mostExp < math[i].a) {
+      mostExp = math[i].a;
+    }
+  }
+  console.log(mostExp);
 }
-math(3, 2, 1, 4);
+
+findMostNumber();
