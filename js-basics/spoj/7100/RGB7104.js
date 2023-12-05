@@ -24,7 +24,7 @@
 // }
 // math(3, 2, 1, 4);
 
-let math = [{ a: 9, b: 77 }, { a: 6 }, { a: 3 }, { a: 4 }, { a: 8 }];
+let math = [{ a: 10 }, { a: 57 }, { a: 17 }, { a: 21 }, { a: 7 }];
 
 function findMostNumber() {
   let mostExp = math[0].a;
