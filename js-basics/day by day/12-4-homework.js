@@ -11,19 +11,49 @@
 // 2 dahi tamirchnii dundaj onoog ol.
 // hamgiin zaluu tamirchniig
 
-let athletics = [
+let athletes = [
   { name: "bold", age: 33, score: [10, 20, 30, 40] },
-  { name: "khosoo", age: 22, score: [11, 21, 31, 41] },
+  { name: "khosoo", age: 35, score: [11, 21, 31, 41] },
   { name: "khuuk", age: 22, score: [12, 22, 32, 42] },
   { name: "dashka", age: 33, score: [13, 23, 33, 43] },
   { name: "khuslen", age: 18, score: [14, 24, 34, 44] },
-  { name: "temuulen", age: 19, score: [15, 10, 20, 26] },
+  { name: "temuulen", age: 18, score: [15, 10, 20, 26] },
   { name: "ami", age: 20, score: [14, 21, 19, 40] },
   { name: "munkhbat", age: 25, score: [10, 22, 30, 42] },
-  { name: "dd", age: 35, score: [15, 15, 16, 26] },
-  { name: "sumiya", age: 30, score: [14, 15, 20, 40] },
+  { name: "tulga", age: 35, score: [15, 15, 16, 26] },
+  { name: "davaadalai", age: 30, score: [14, 15, 20, 40] },
 ];
+//zaluu tairching haij oloh funct
+function findByYoung() {
+  let youngest = athletes[0].age;
+  let youngestName = athletes[0].age;
+  for (let i = 0; i < athletes.length; i = i + 1) {
+    if (youngest > athletes[i].age) {
+      youngest = athletes[i].age;
+      youngestName = athletes[i].name;
+    }
+  }
+  console.log("youngest athlete name is:", youngestName, "year is:", youngest);
+}
+findByYoung();
 
+//hugshin tamirching haij oloh funct
+function findByOld() {
+  let oldest = athletes[0].age;
+  let oldestName = athletes[0].name;
+  for (let i = 0; i < athletes.length; i = i + 1) {
+    if (oldest < athletes[i].age) {
+      oldest = athletes[i].age;
+      oldestName = athletes[i].name;
+    }
+  }
+  console.log("oldest athlet name is:", oldestName, "year is:", oldest);
+}
+findByOld();
+
+//tamirchnii nereer haih funct
+
+<<<<<<< HEAD
 function findScore(s) {
   for (let i = 0; i < athletics.length; i = i++) {}
 }
@@ -37,3 +67,14 @@ function setSale(saleAmount) {
 }
 setSale(20);
 console.log(products);
+=======
+function findByCategory(name) {
+  // let avgScore = athletes[0].score;
+  for (let i = 0; i < 10; i = i + 1) {
+    if (athletes[i].name == name) {
+      // avgScore = athletes[i].console.log(athletes[i].score[0]);
+    }
+  }
+}
+findByCategory("bold");
+>>>>>>> b68db1683b5ee2563d97ed0a6ebe96f839e223fb
