@@ -12,11 +12,3 @@
 // 6
 // Output:
 // 600
-
-let a = "1";
-let b = "A";
-
-if (a > b) {
-  console.log(yyyyy);
- else{ console.log(ttttt);
-}}
