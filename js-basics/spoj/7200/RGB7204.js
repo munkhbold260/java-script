@@ -21,4 +21,5 @@ function math(n) {
   }
   console.log(sum);
 }
-math(5);
+
+math(6);

@@ -53,7 +53,6 @@ findByOld();
 
 //tamirchnii nereer haih funct
 
-<<<<<<< HEAD
 function findScore(s) {
   for (let i = 0; i < athletics.length; i = i++) {}
 }
@@ -67,7 +66,6 @@ function setSale(saleAmount) {
 }
 setSale(20);
 console.log(products);
-=======
 function findByCategory(name) {
   // let avgScore = athletes[0].score;
   for (let i = 0; i < 10; i = i + 1) {
@@ -77,4 +75,3 @@ function findByCategory(name) {
   }
 }
 findByCategory("bold");
->>>>>>> b68db1683b5ee2563d97ed0a6ebe96f839e223fb
