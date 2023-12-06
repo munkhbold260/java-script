@@ -11,15 +11,15 @@
 // Input:
 // 3612
 // Output:
-// 1 0 12
+// 2 1 0 12
 
 function time(num) {
   sec = num % 60;
   min = ((num - sec) / 60) % 60;
   h = (num - min * 60 - sec) / 3600;
-  console.log(sec, min, h);
+  console.log("h", h, "min", min, "sec", sec);
 }
-time(30905);
+time(3612);
 
 // return x % 60;   12 sec
 // return x / 60 - 60 - ((x / 60 - 60) % 1); 0   min

@@ -24,8 +24,16 @@ let athletics = [
   { name: "sumiya", age: 30, score: [14, 15, 20, 40] },
 ];
 
-function findScore(score) {
+function findScore(s) {
   for (let i = 0; i < athletics.length; i = i++) {}
 }
 console.log(athletics[0].score[0]);
 findScore();
+
+function setSale(saleAmount) {
+  for (let i = 0; i < 10; i = i + 1) {
+    products[i].price = products[i].price * (1 - saleAmount / 100);
+  }
+}
+setSale(20);
+console.log(products);

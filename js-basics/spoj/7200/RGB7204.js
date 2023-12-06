@@ -14,13 +14,11 @@
 // Output:
 // 15
 
-function printIOI(n) {
-  for (let i = 1; i < n; i = i + 1) {
-    console.log(i);
+function math(n) {
+  let sum = 0;
+  for (let i = 1; i <= n; i = i + 1) {
+    sum = sum + i;
   }
+  console.log(sum);
 }
-printIOI(4);
-
-for (let i = 1; i < 5; i = i + 1) {
-  console.log(i);
-}
+math(5);

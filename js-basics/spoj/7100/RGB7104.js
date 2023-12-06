@@ -24,12 +24,12 @@
 // }
 // math(3, 2, 1, 4);
 
-let math = [{ a: 9, b: 77 }, { a: 6 }, { a: 3 }, { a: 4 }, { a: 8 }];
+let math = [{ a: 8 }, { a: 9 }, { a: 3 }, { a: 4 }, { a: 7 }];
 
 function findMostNumber() {
   let mostExp = math[0].a;
   for (let i = 1; i < math.length; i = i + 1) {
-    if (mostExp < math[i].a) {
+    if (mostExp > math[i].a) {
       mostExp = math[i].a;
     }
   }
