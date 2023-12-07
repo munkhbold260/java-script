@@ -15,10 +15,10 @@
 // 120
 
 function math(n) {
-  let sum = 0;
+  let sum = 1;
   for (let i = 1; i <= n; i = i + 1) {
-    sum = i;
+    sum = sum * i;
     console.log(sum);
   }
 }
-math(6);
+math(5);

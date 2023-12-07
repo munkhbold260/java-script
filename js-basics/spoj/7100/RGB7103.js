@@ -20,4 +20,4 @@ function math(a, b, c) {
     console.log(b);
   } else console.log(c);
 }
-math(7, 5, 6);
+math(2, 5, 6);

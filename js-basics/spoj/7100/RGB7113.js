@@ -20,7 +20,7 @@ if (a < 5) {
 
 function math(b) {
   if (b > 5) {
-    console.log("ye");
-  } else console.log("nmo");
+    console.log("yes");
+  } else console.log("no");
 }
 math(6);

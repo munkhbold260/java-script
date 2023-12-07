@@ -13,16 +13,16 @@
 // Output:
 // 1
 
-// function math(a, b, c, d) {
-//   if (a < b && a < c && a < d) {
-//     console.log(a);
-//   } else if (b < c && b < d) {
-//     console.log(b);
-//   } else if (c < d) {
-//     console.log(c);
-//   } else console.log(d);
-// }
-// math(3, 2, 1, 4);
+function math(a, b, c, d) {
+  if (a < b && a < c && a < d) {
+    console.log(a);
+  } else if (b < c && b < d) {
+    console.log(b);
+  } else if (c < d) {
+    console.log(c);
+  } else console.log(d);
+}
+math(3, 2, 1, 4);
 
 let math = [{ a: 10 }, { a: 57 }, { a: 17 }, { a: 21 }, { a: 7 }];
 function findMostNumber() {
