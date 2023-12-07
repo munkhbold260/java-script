@@ -22,4 +22,4 @@ function math(n) {
   console.log(sum);
 }
 
-math(6);
+math(5);

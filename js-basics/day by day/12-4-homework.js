@@ -66,6 +66,7 @@ function setSale(saleAmount) {
 }
 setSale(20);
 console.log(products);
+
 function findByCategory(name) {
   // let avgScore = athletes[0].score;
   for (let i = 0; i < 10; i = i + 1) {
