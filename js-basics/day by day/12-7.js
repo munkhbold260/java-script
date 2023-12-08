@@ -45,7 +45,6 @@ function number(a, b, c) {
 number(30, 10, 2);
 
 let number3 = [40, 20, 2];
-
 function num() {
   if (number3[0] < number3[1]) {
     for (let i = number3[0]; i <= number3[1]; i = i + number3[2]) {

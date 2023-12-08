@@ -26,6 +26,17 @@
 //b=orts
 //c=ortson dahi ailiin too
 //d=ailiin dugaar
-function math(a, b, c, d) {}
+function math(a, b, c, d) {
+  let orts = 1;
+  let floor = 211;
+  let door = 12;
+  if (d - a * c > a * c) {
+    orts = orts + 1;
+  } else if (d - a * c > a * c * 2) {
+    orts = orts + 2;
+  }
+  console.log(orts);
+}
 
-math(5, 3, 4, 32);
+math(5, 3, 4, 52);
+42 - 5 * 4 > 5 * 4;
