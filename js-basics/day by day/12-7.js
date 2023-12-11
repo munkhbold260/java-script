@@ -6,7 +6,7 @@ function math(n) {
     console.log(i);
   }
 }
-math(10);
+math(9);
 // Hoyor too ogogdohod baga toonoos n ih too hurtel heveldeg funct bich.
 // Jishee n:
 // input 15 9
@@ -42,20 +42,24 @@ function number(a, b, c) {
     }
   }
 }
-number(30, 10, 2);
+number(15, 10, 2);
 
-let number3 = [40, 20, 2];
-function num() {
-  if (number3[0] < number3[1]) {
-    for (let i = number3[0]; i <= number3[1]; i = i + number3[2]) {
-      console.log(i);
+function math3(num1, num2, num3) {
+  let array = [];
+  count = 0;
+  if (num1 < num2) {
+    for (let i = num1; i <= num2; i = i + num3) {
+      array[count] = i;
+      count++;
     }
-  } else if (number3[0] > number3[1]) {
-    for (let i = number3[1]; i <= number3[0]; i = i + number3[2]) {
-      console.log(i);
+    console.log(array);
+  } else if (num1 > num2) {
+    for (let i = num1; i >= num2; i = i - num3) {
+      array[count] = i;
+      count++;
     }
+    console.log(array);
   }
 }
-num(number3);
 
-// bagshaa 3 dahiig nbodoj chadadguie.hhe
+math3(20, 10, 2);
