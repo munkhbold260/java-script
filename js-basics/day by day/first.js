@@ -3,6 +3,8 @@
 // assignment ->suulgaj uguh
 //; -> ( semi colon) muriin tugsguliig temdeglene
 
+//console.log(type of numStr); ->turliig herlej hardag hardag
+
 let firstName = "boldoo";
 let myAge = 33;
 

@@ -50,23 +50,33 @@ function primeNumber(num) {
 }
 console.log(primeNumber(1));
 
-// function primeNumber(num) {
-//   if (num == 1) return false;
+function primeNumber(num) {
+  if (num == 1) return false;
 
-//   for (let i = 2; i < num; i++) {
-//     if (num % i == 0) return false;
-//   }
-//   return true;
-// }
-// function betweenPrime(num1, num2) {
-//   let prime = [];
-//   let count = 0;
-//   for (let i = num1; i <= num2; i++) {
-//     if (primeNumber(i)) {
-//       prime[count] = i;
-//       count++;
-//     }
-//   }
-//   return prime;
-// }
-// console.log(betweenPrime(1, 100));
+  for (let i = 2; i < num; i++) {
+    if (num % i == 0) return false;
+  }
+  return true;
+}
+function betweenPrime(num1, num2) {
+  let prime = [];
+  let count = 0;
+  for (let i = num1; i <= num2; i++) {
+    if (primeNumber(i)) {
+      prime[count] = i;
+      count++;
+    }
+  }
+  return prime;
+}
+console.log(betweenPrime(1, 100));
+
+
+function home(a, b, c) {
+  let floor = c / b - ((c / b) % 1);
+
+} else if ((c / b) % 1 == 0) {
+  floor = floor + 0;
+} else if ((c / b) % 1 !== 0) {
+  floor = floor + 1;
+}

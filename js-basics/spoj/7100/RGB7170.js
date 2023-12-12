@@ -37,4 +37,4 @@ function home(a, b, c) {
   console.log(floor, "-r dawhariin", doorNumber, "-r haalga");
 }
 
-home(5, 4, 10);
+home(5, 5, 20);

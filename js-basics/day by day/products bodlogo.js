@@ -84,40 +84,40 @@ let products = [
   },
 ];
 
-// function setSale(saleAmount) {
-//   for (let i = 0; i < 10; i = i + 1) {
-//     products[i].price = products[i].price * (1 - saleAmount / 100);
-//   }
-// }
-// setSale(20);
-// console.log(products);
+function setSale(saleAmount) {
+  for (let i = 0; i < 10; i = i + 1) {
+    products[i].price = products[i].price * (1 - saleAmount / 100);
+  }
+}
+setSale(20);
+console.log(products);
 
-// for (let i = 0; i < 10; i = i + 1) {
-//   if (products[i].category == "food") {
-//     console.log(products[i]);
-//   }
-// }
-// function findByCategory(cate) {
-//   for (let i = 0; i < 10; i = i + 1) {
-//     if (products[i].category == cate) {
-//       console.log(products[i].name);
-//     }
-//   }
-// }
-// findByCategory("car");
+for (let i = 0; i < 10; i = i + 1) {
+  if (products[i].category == "food") {
+    console.log(products[i]);
+  }
+}
+function findByCategory(cate) {
+  for (let i = 0; i < 10; i = i + 1) {
+    if (products[i].category == cate) {
+      console.log(products[i].name);
+    }
+  }
+}
+findByCategory("car");
 
-// function findAboveAvg(prods) {
-//   return [];
-// }
+function findAboveAvg(prods) {
+  return [];
+}
 
-// let aboveAVG = findAboveAvg(products);
-// console.log(aboveAVG);
+let aboveAVG = findAboveAvg(products);
+console.log(aboveAVG);
 
-// //dundaj uniig oloh
-// function findAVG(prods) {
-//   let avgPrice = 0;
-//   return avgPrice;
-// }
+//dundaj uniig oloh
+function findAVG(prods) {
+  let avgPrice = 0;
+  return avgPrice;
+}
 
 //products--n dundaj price-s unetei productsuudiig oloh
 

@@ -26,17 +26,17 @@
 //b=orts
 //c=ortson dahi ailiin too
 //d=ailiin dugaar
-function math(a, b, c, d) {
-  let orts = 1;
-  let floor = 211;
-  let door = 12;
-  if (d - a * c > a * c) {
-    orts = orts + 1;
-  } else if (d - a * c > a * c * 2) {
-    orts = orts + 2;
+function math(floors, gates, doors, doornum) {
+  let gate = 1;
+  let floor = doornum / doors - (doornum % doors);
+  if (doornum - floors * doors > floors * doors) {
+    gate = orts + 1;
+  } else if (doornum - floors * doors < floors * doors) {
+    gate = gate;
   }
-  console.log(orts);
+  if (floor) {
+  }
+  console.log("orts", gate, "dawhar", floor);
 }
 
-math(5, 3, 4, 52);
-42 - 5 * 4 > 5 * 4;
+math(5, 3, 4, 9);
