@@ -20,8 +20,8 @@ function math(a, b) {
   let sum = 0;
   for (let i = 1; i <= b; i = i + 1) {
     sum = sum + a;
-    console.log(sum);
   }
+  console.log(sum);
 }
 
 math(50, 9);
