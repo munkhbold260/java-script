@@ -14,35 +14,35 @@
 let products = [
   {
     name: "iphone12",
-    price: 2000000,
+    price: 20000,
     category: "phone",
     brand: "apple",
     stock: 11,
   },
   {
     name: "bmw-x7",
-    price: 31000000,
+    price: 100000,
     category: "car",
     brand: "bmw",
     stock: 2,
   },
   {
     name: "imac",
-    price: 4100000,
+    price: 25000,
     category: "computer",
     brand: "apple",
     stock: 3,
   },
   {
     name: "dell",
-    price: 2000000,
+    price: 20000,
     category: "laptop",
     brand: "dell",
     stock: 4,
   },
   {
     name: "washer1",
-    price: 2000000,
+    price: 15000,
     category: "washing",
     brand: "samsung",
     stock: 5,
@@ -77,12 +77,16 @@ let products = [
   },
   {
     name: "tcl-98",
-    price: 6000000,
+    price: 17000,
     category: "display",
     brand: "tcl",
     stock: 10,
   },
 ];
+
+// filterBybrand
+// filterByPrice(max,min) 1000,000 doosh uneteig gargaj irn
+// sortByStock-
 
 // function setSale(saleAmount) {
 //   for (let i = 0; i < 10; i = i + 1) {
@@ -144,32 +148,27 @@ let products = [
 // }
 // let aboveAVG = findAboveAvg(products);
 // console.log("aboveAVG:", aboveAVG);
+//////////////////////////////////////////////////////////////////////
+///////// filterBybrand
 
-// filterBybrand
-// filterByPrice(max,min) 1000,000 doosh uneteig gargaj irn
-// sortByStock-
-
-let nums = [1, 2, 1, 2, 3, 5, 1, -51, -25, 12, 31, 56, 124, 1];
-let myFunction = (a, b) => {
-  return b - a;
-};
-nums.sort(myFunction);
-nums[nums.length] = 100;
-console.log(nums);
-
-const fruits = [
-  "Apple",
-  "orange",
-  "banana",
-  "mango",
-  "pine-apple",
-  "strawberry",
-];
-fruits.sort((a, b) => {
-  if (a < b) {
-    return -1;
-  } else {
-    return 1;
-  }
+let filterByBrand = products.filter(function (brand) {
+  return brand.brand == "apple";
 });
-console.log(fruits);
+console.log("filterByBrand", filterByBrand);
+
+////////////////////////////////////////////////////////////////////////
+/////// sortByStock-
+let sortByStock = products.sort(function (stock1, stock2) {
+  return stock1.stock - stock2.stock;
+});
+console.log("sortByStock", sortByStock);
+
+//////////////////////////////////////////////////////////////////////
+////////////////// filterByPrice(max,min) 1000,000 doosh uneteig gargaj ir
+
+let filterByPrice = products.filter(function (price) {
+  return price.price >= 20000;
+});
+console.log("filterbyprice", filterByPrice);
+////////////////////////////////////////////////////////////////
+//////////sort by

@@ -1,13 +1,27 @@
 //while loop
-
 // array -methods
-
-let nums = [
-  12, 12, 12, 34, 34, 3, 4234, 234, 234, 23, 4, 234, 23, 4234234, 2456, 57, 567,
-  56, 657657,
-];
-nums.sort((a, b) => b - a);
+// sort
+let nums = [1, 2, 1, 2, 3, 5, 1, -51, -25, 12, 31, 56, 124, 1];
+let myFunction = (a, b) => {
+  return b - a;
+};
+nums.sort(myFunction);
+nums[nums.length] = 100;
 console.log(nums);
 
-let fruits = ["Apple", "orange", "strawberry", "banana", "pine-apple", "lemon"];
-if (fruits[0]) fruits;
+const fruits = [
+  "banana",
+  "orange",
+  "strawberry",
+  "Apple",
+  "pine-apple",
+  "mango",
+];
+fruits.sort((a, b) => {
+  if (a < b) {
+    return -1;
+  } else {
+    return 1;
+  }
+});
+console.log(fruits);
