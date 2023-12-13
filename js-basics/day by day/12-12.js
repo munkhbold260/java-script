@@ -12,7 +12,13 @@ let alphabets = `abcdefghijklmonpqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ`;
 let letters = 0;
 let lines = 1;
 let words = 1;
-for (let i = 0; i < sentence.length; i = i + 1) {
+let leee = 0;
+for (let i = 0; i < sentence.length; i++) {
+  for (let j = 0; j < alphabets.length; j++) {
+    if (sentence.charAt(i) == alphabets.charAt(j)) {
+      leee++;
+    }
+  }
   if (sentence.charAt(i) == "\n") {
     lines++;
   }
@@ -20,19 +26,18 @@ for (let i = 0; i < sentence.length; i = i + 1) {
     words++;
   }
 
-  // if (sentence.charAt(i)) {
-  //   letters++;
-  // }
-}
-// for (let k = 0; k < alphabets.length; k++) {
-//   for(){}
-//   }
-
-for (let j = 0; j < alphabets.length; j++) {
-  for (let i = 0; i < sentence.length; i++) {
-    if (sentence[i] == j) {
-      letters++;
-    }
+  if (sentence.charAt(i)) {
+    letters++;
   }
 }
-console.log("lines=", lines, "words=", words, "letters=", letters);
+
+console.log(
+  "lines=",
+  lines,
+  "words=",
+  words,
+  "letters=",
+  letters,
+  "leee=",
+  leee
+);

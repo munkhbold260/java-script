@@ -84,63 +84,92 @@ let products = [
   },
 ];
 
-function setSale(saleAmount) {
-  for (let i = 0; i < 10; i = i + 1) {
-    products[i].price = products[i].price * (1 - saleAmount / 100);
+// function setSale(saleAmount) {
+//   for (let i = 0; i < 10; i = i + 1) {
+//     products[i].price = products[i].price * (1 - saleAmount / 100);
+//   }
+// }
+// setSale(20);
+// console.log(products);
+
+// for (let i = 0; i < 10; i = i + 1) {
+//   if (products[i].category == "food") {
+//     console.log(products[i]);
+//   }
+// }
+// function findByCategory(cate) {
+//   for (let i = 0; i < 10; i = i + 1) {
+//     if (products[i].category == cate) {
+//       console.log(products[i].name);
+//     }
+//   }
+// }
+// findByCategory("car");
+
+// function findAboveAvg(prods) {
+//   return [];
+// }
+
+// let aboveAVG = findAboveAvg(products);
+// console.log(aboveAVG);
+
+// //dundaj uniig oloh
+// function findAVG(prods) {
+//   let avgPrice = 0;
+//   return avgPrice;
+// }
+
+// //products--n dundaj price-s unetei productsuudiig oloh
+
+// function findAboveAvg(prods) {
+//   let avgPrice = 0;
+//   let sumPrice = 0;
+//   for (let i = 0; i < prods.length; i = i + 1) {
+//     sumPrice = sumPrice + prods[i].price;
+//   }
+//   console.log("sumPrice:", sumPrice);
+//   avgPrice = sumPrice / prods.length;
+
+//   // now filter price above avg
+
+//   let filterdProd = [];
+//   let count = 0;
+//   for (let i = 0; i < prods.length; i++) {
+//     if (prods[i].price > avgPrice) {
+//       filterdProd[count] = prods[i];
+//       count++;
+//     }
+//   }
+//   return filterdProd;
+// }
+// let aboveAVG = findAboveAvg(products);
+// console.log("aboveAVG:", aboveAVG);
+
+// filterBybrand
+// filterByPrice(max,min) 1000,000 doosh uneteig gargaj irn
+// sortByStock-
+
+let nums = [1, 2, 1, 2, 3, 5, 1, -51, -25, 12, 31, 56, 124, 1];
+let myFunction = (a, b) => {
+  return b - a;
+};
+nums.sort(myFunction);
+nums[nums.length] = 100;
+console.log(nums);
+
+const fruits = [
+  "Apple",
+  "orange",
+  "banana",
+  "mango",
+  "pine-apple",
+  "strawberry",
+];
+fruits.sort((a, b) => {
+  if (a < b) {
+    return -1;
+  } else {
+    return 1;
   }
-}
-setSale(20);
-console.log(products);
-
-for (let i = 0; i < 10; i = i + 1) {
-  if (products[i].category == "food") {
-    console.log(products[i]);
-  }
-}
-function findByCategory(cate) {
-  for (let i = 0; i < 10; i = i + 1) {
-    if (products[i].category == cate) {
-      console.log(products[i].name);
-    }
-  }
-}
-findByCategory("car");
-
-function findAboveAvg(prods) {
-  return [];
-}
-
-let aboveAVG = findAboveAvg(products);
-console.log(aboveAVG);
-
-//dundaj uniig oloh
-function findAVG(prods) {
-  let avgPrice = 0;
-  return avgPrice;
-}
-
-//products--n dundaj price-s unetei productsuudiig oloh
-
-function findAboveAvg(prods) {
-  let avgPrice = 0;
-  let sumPrice = 0;
-  for (let i = 0; i < prods.length; i = i + 1) {
-    sumPrice = sumPrice + prods[i].price;
-  }
-  console.log("sumPrice:", sumPrice);
-  avgPrice = sumPrice / prods.length;
-
-  // now filter price above avg
-
-  let filterdProd = [];
-  let count = 0;
-  for (let i = 0; i < prods.length; i++) {
-    if (prods[i].price > avgPrice) {
-      filterdProd[count] = prods[i];
-      count++;
-    }
-  }
-  return filterdProd;
-}
-let aboveAVG = findAboveAvg(products);
-console.log("aboveAVG:", aboveAVG);
+});
+console.log(fruits);
