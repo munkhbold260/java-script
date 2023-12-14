@@ -26,36 +26,41 @@ const shoppingCartItems = [
   { name: "Desk Chair", price: 120, quantity: 1, category: "Furniture" },
 ];
 
-///////////////////////// task write a function calculateCategoryCosts return a object of {category: category, totalcost:???}
+// ///////////////////////// task write a function calculateCategoryCosts return a object of {category: category, totalcost:???}
+// let totalCost = shoppingCartItems.map((a) => {
+//   return { name: a.name, totalCost: a.price * a.quantity };
+// });
+// console.log("category, totalcost:", totalCost);
+
+// ///////////////////////////                calculate discount price by 10% {name, price, quantity, totalCost}
+// let discountPrice = shoppingCartItems.map((a) => {
+//   return {
+//     name: a.name,
+//     discountedPrice: a.price * 0.9,
+//     quantity: a.quantity,
+//     totalCost: a.price * 0.9 * a.quantity,
+//   };
+// });
+// console.log(" discountedPrice", discountPrice);
+// ////////////////////////////////// 2s deesh quantytai productaa garga
+
+// let qwerty3 = discountPrice.filter((a) => {
+//   return a.quantity > 2;
+// });
+// console.log("discounted price and 2<quantity", qwerty3);
+// //////////////////////////////total cost average
+// let avgPrice = 0;
+// let priceAllAvg = shoppingCartItems.map((a) => {
+//   avgPrice = avgPrice + a.price / shoppingCartItems.length;
+// });
+// console.log("all avg price", avgPrice);
+// /////////////////////////
+// let avgPriceAbove = discountPrice.filter((a) => {
+//   return a.totalCost > avgPrice;
+// });
+// console.log(avgPriceAbove);
+
 let totalCost = shoppingCartItems.map((a) => {
   return { name: a.name, totalCost: a.price * a.quantity };
 });
 console.log("category, totalcost:", totalCost);
-
-///////////////////////////                calculate discount price by 10% {name, price, quantity, totalCost}
-let discountPrice = shoppingCartItems.map((a) => {
-  return {
-    name: a.name,
-    discountedPrice: a.price * 0.9,
-    quantity: a.quantity,
-    totalCost: a.price * 0.9 * a.quantity,
-  };
-});
-console.log(" discountedPrice", discountPrice);
-////////////////////////////////// 2s deesh quantytai productaa garga
-
-let qwerty3 = discountPrice.filter((a) => {
-  return a.quantity > 2;
-});
-console.log("discounted price and 2<quantity", qwerty3);
-//////////////////////////////total cost average
-let avgPrice = 0;
-let priceAllAvg = shoppingCartItems.map((a) => {
-  avgPrice = avgPrice + a.price / shoppingCartItems.length;
-});
-console.log("all avg price", avgPrice);
-/////////////////////////
-let avgPriceAbove = discountPrice.filter((a) => {
-  return a.totalCost > avgPrice;
-});
-console.log(avgPriceAbove);

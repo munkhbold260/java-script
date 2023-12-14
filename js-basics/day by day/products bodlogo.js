@@ -151,7 +151,7 @@ let products = [
 //////////////////////////////////////////////////////////////////////
 ///////// filterBybrand
 
-let filterByBrand = products.filter(function (brand) {
+let filterByBrand = products.filter((brand) => {
   return brand.brand == "apple";
 });
 console.log("filterByBrand", filterByBrand);
