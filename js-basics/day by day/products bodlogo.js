@@ -163,11 +163,16 @@ let sortByStock = products.sort(function (stock1, stock2) {
 });
 console.log("sortByStock", sortByStock);
 
+let sortByPrice = products.sort(function (price1, price2) {
+  return price1.price - price2.price;
+});
+console.log("sortByPrice", sortByPrice);
+
 //////////////////////////////////////////////////////////////////////
 ////////////////// filterByPrice(max,min) 1000,000 doosh uneteig gargaj ir
 
 let filterByPrice = products.filter(function (price) {
-  return price.price >= 20000;
+  return price.price >= 10000 && price.price <= 20000;
 });
 console.log("filterbyprice", filterByPrice);
 ////////////////////////////////////////////////////////////////
