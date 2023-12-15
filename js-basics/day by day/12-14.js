@@ -162,13 +162,37 @@ let employees = [
 // console.log("topPerformersReport", topPerformersReport);
 ///////////////////////////task 3  position bolgonii findByAvgSalary
 
-let sortByDepartmentAndSalary = employees.map((b) => {
-  return { position: b.department, salary: b.salary };
+// let sortByDepartmentAndSalary = employees.map((b) => {
+//   return { position: b.department, salary: b.salary };
+// });
+// console.log("swdewdwefe", sortByDepartmentAndSalary);
+//////////////////////////////////////////////////////////////
+// let avgSalary = 0;
+// let findByAverageSalary = employees.map((a) => {
+//   avgSalary = avgSalary + a.salary / sortByDepartmentAndSalary.length;
+// });
+// console.log(avgSalary);
+// const highPaidEmployees = (employees, department, thresholdSalary) => {
+//   const answer = employees.filter(
+//     (employee) =>
+//       employee.department === department && employee.salary > thresholdSalary
+//   );
+//   return answer;
+// };
+// console.log("Finance", highPaidEmployees(employees, "Finance", 90000));
+// console.log("Engineering", highPaidEmployees(employees, "Engineering", 90000));
+//Task 2 Find top performers employee
+const topPerformersReport = (employees, minRating) => {
+  const topPerformers = employees
+    .filter((employee) => employee.performanceRating >= minRating)
+    .map(({ name, performanceRating }) => ({ name, performanceRating }));
+  return topPerformers;
+};
+console.log(topPerformersReport(employees, 4.8));
+let result = employees.map((employee) => {
+  return {
+    position: employee.position,
+    salary: employee.salary,
+  };
 });
-console.log("swdewdwefe", sortByDepartmentAndSalary);
-
-let avgSalary = 0;
-let findByAverageSalary = employees.map((a) => {
-  avgSalary = avgSalary + a.salary / sortByDepartmentAndSalary.length;
-});
-console.log(avgSalary);
+console.log(result);
