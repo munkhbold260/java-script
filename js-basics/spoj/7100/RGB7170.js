@@ -18,6 +18,12 @@
 // Output:
 // 3 2
 
+"";
+let b = [];
+
+let a = { a: 1, b: 2 };
+console.log(a);
+
 function home(a, b, c) {
   let floor = c / b - ((c / b) % 1);
   let doorNumber = 0;
@@ -37,4 +43,4 @@ function home(a, b, c) {
   console.log(floor, "-r dawhariin", doorNumber, "-r haalga");
 }
 
-home(5, 5, 20);
+home(20, 7, 120);

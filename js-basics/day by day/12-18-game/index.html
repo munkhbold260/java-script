@@ -7,19 +7,22 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>Guess the number(1-100)</h1>
-    <div>
-      <input type="text" name="num1" id="randomNum" />
+    <p>Guess the number(1-100)</p>
+    <div class="input">
+      <label for="num1">insert num:</label>
+      <input type="text" name="num1" id="inputNum" />
+      <!-- <input type="text" name="num1" id="inputNum" /> -->
     </div>
     <div class="buttons">
       <div>
-        <button id="check">check</button>
+        <button onclick="check()">check</button>
       </div>
       <div>
         <button onclick="reset()">reset</button>
       </div>
     </div>
-    <div><p id="answer">qwwdewwdwrty</p></div>
+    <div class="result" id="result"></div>
+    <div id="qwe"></div>
   </body>
   <script src="./script.js"></script>
 </html>
