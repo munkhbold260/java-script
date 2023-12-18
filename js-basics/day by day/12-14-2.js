@@ -157,4 +157,14 @@ let sortByRating = bookData.sort((a, b) => {
 });
 console.log("sort by rating", sortByRating);
 ////////////////// find more than 20 length books
+let findCharLength = bookData.filter((a) => {
+  return a.title.length > 20;
+});
+console.log("findCharLength", findCharLength);
+
 ///////////////////// add summary on object by like this `A captivating book by ${book.author}.`
+
+let addQwerty = bookData.map((a) => {
+  return { title: a.title, summary: "A captivating book by  " + a.author };
+});
+console.log(addQwerty);
