@@ -1,0 +1,19 @@
+.test {
+  width: 232px;
+  height: 321px;
+  background-color: aqua;
+}
+.disp {
+  width: 193px;
+  height: 53px;
+  background-color: rgb(184, 141, 62);
+}
+.button {
+  width: 58px;
+  height: 48px;
+  background-color: gray;
+  border: solid black 0.5px;
+}
+.buttons {
+  display: grid;
+}

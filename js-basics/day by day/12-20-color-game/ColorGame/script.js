@@ -15,6 +15,13 @@ startBtn.setAttribute("class", "startgame");
 startBtn.innerText = "start";
 //
 header.appendChild(startBtn);
+// reset
+
+const reset = document.createElement("button");
+reset.setAttribute("class", "reset");
+reset.innerText = "reset";
+header.appendChild(reset);
+
 // score
 const score = document.createElement("div");
 score.setAttribute("class", "score");
@@ -65,21 +72,44 @@ function startgame() {
       // i index rand tentsehgui baiwal ijil ungu ugch bn
       card.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
     }
-    // card box ruu nemj bn... niit 9 udaa card nemj ugnu
+    card.addEventListener("click", (e) => {
+      e.target.style.backgroundColor !== `rgb(${red}, ${green}, ${blue})`;
+
+      if (i != rand) {
+        chances--;
+        chance.innerHTML = chances;
+        if (chances == 0) {
+          chance.innerHTML = "game over";
+          gamebody.innerHTML = "";
+        }
+      } else if (i == rand) {
+        scores++;
+        score.innerHTML = scores;
+        if (scores == 3) {
+          score.innerHTML = "congrats";
+          gamebody.innerHTML = "";
+        }
+      }
+    });
+
     box.appendChild(card);
   }
-  //   gamebody hoosolj baina. / dotor n aguulj bui buh elemntuudiig hoosolj shinechilj bn
   gamebody.innerHTML = "";
-
-  //
   gamebody.appendChild(box);
   const correctBox = document.getElementById(`qwer${rand}`);
-  correctBox.addEventListener("click", startgame);
-  correctBox.addEventListener("click", addScore);
+  correctBox.addEventListener("click", () => {
+    if (scores < 3) {
+      startgame();
+    } else {
+      gamebody.innerHTML = "";
+    }
+  });
 }
-
-function addScore() {
-  scores = scores + 1;
-  score.innerHTML = scores;
-  console.log(scores);
+reset.addEventListener("click", scoreReset);
+function scoreReset() {
+  scores = 0;
+  score.innerHTML = 0;
+  chances = 3;
+  chance.innerHTML = chances;
+  gamebody.innerHTML = "";
 }
