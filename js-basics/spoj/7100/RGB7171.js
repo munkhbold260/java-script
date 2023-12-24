@@ -26,17 +26,32 @@
 //b=orts
 //c=ortson dahi ailiin too
 //d=ailiin dugaar
-function math(floors, gates, doors, doornum) {
-  let gate = 1;
-  let floor = doornum / doors - (doornum % doors);
-  if (doornum - floors * doors > floors * doors) {
-    gate = orts + 1;
-  } else if (doornum - floors * doors < floors * doors) {
-    gate = gate;
+var entry = 0;
+var floor = 0;
+var door = 0;
+var doorNum = 21;
+for (let i = 0; i <= doorNum; i++) {
+  if (i < 20) {
+    entry = 1;
+  } else if (i > 20 && i < 40) {
+    entry = 2;
+  } else if (i > 40) {
+    entry = 3;
   }
-  if (floor) {
-  }
-  console.log("orts", gate, "dawhar", floor);
 }
+console.log(entry, floor, door);
 
-math(5, 3, 4, 9);
+// function math(floors, gates, doors, doornum) {
+//   let gate = 1;
+//   let floor = doornum / doors - (doornum % doors);
+//   if (doornum - floors * doors > floors * doors) {
+//     gate = orts + 1;
+//   } else if (doornum - floors * doors < floors * doors) {
+//     gate = gate;
+//   }
+//   if (floor) {
+//   }
+//   console.log("orts", gate, "dawhar", floor);
+// }
+
+// math(5, 3, 4, 9);

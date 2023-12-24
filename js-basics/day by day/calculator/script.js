@@ -40,7 +40,7 @@ var oldNumber = "";
 var lastOperator = "";
 var operUsed = false;
 //
-for (i = 0; i < 19; i++) {
+for (let i = 0; i < 19; i++) {
   const buttonsDiv = document.createElement("div");
   buttonsDiv.setAttribute("id", i);
   buttonsDiv.setAttribute("class", "buttonsDiv");
