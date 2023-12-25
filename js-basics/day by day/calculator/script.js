@@ -51,6 +51,22 @@ for (let i = 0; i < 19; i++) {
   buttons.addEventListener("click", toDisplay);
   if (i == 16) {
     buttonsDiv.setAttribute("class", "zero");
+  } else if (i == 0 || i == 1 || i == 2) {
+    buttons.setAttribute("class", "dgray");
+  } else if (
+    i == 4 ||
+    i == 5 ||
+    i == 6 ||
+    i == 8 ||
+    i == 9 ||
+    i == 10 ||
+    i == 12 ||
+    i == 13 ||
+    i == 14 ||
+    i == 16 ||
+    i == 17
+  ) {
+    buttons.setAttribute("class", "gray");
   }
   but.appendChild(buttonsDiv);
   buttonsDiv.appendChild(buttons);
@@ -59,7 +75,7 @@ function isNumber(value) {
   return typeof value === "number";
 }
 function toDisplay() {
-  var disp = document.getElementById("disp");
+  let disp = document.getElementById("disp");
   //
   if (this.innerText === "AC") {
     disp.value = "";
@@ -85,7 +101,7 @@ function toDisplay() {
     else if (lastOperator === "-") {
       disp.value = Number(oldNumber) - Number(disp.value);
     } else if (lastOperator === "*") {
-      disp.value = Number(oldNumber) * Number(disp.value);
+      disp.value = Number(disp.value) * Number(oldNumber);
     } else if (lastOperator === "/") {
       disp.value = Number(oldNumber) / Number(disp.value);
     }

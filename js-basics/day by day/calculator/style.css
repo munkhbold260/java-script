@@ -48,7 +48,7 @@
 button {
   width: 100%;
   height: 100%;
-  border: 1px solid var(--Stroke, #464647);
+  border: 0.1px solid #464647;
   color: white;
 }
 .zero {
