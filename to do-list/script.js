@@ -43,6 +43,21 @@ function boardmake() {
       const card = document.createElement("div");
       card.setAttribute("class", "card");
       cards.appendChild(card);
+
+      const title = document.createElement("div");
+      title.setAttribute("class", "title");
+      title.innerText = "title";
+      card.appendChild(title);
+
+      const description = document.createElement("div");
+      description.setAttribute("class", "description");
+      description.innerText = "description";
+      card.appendChild(description);
+
+      const priority = document.createElement("div");
+      priority.setAttribute("class", "priority");
+      priority.innerText = "priority";
+      card.appendChild(priority);
     });
   });
 }
