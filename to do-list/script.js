@@ -16,7 +16,7 @@ const boardTitle = [
 ];
 
 function boardmake() {
-  boardTitle.map((title) => {
+  boardTitle.map((title, index) => {
     const board = document.createElement("div");
     board.setAttribute("class", "board");
     boards.appendChild(board);
@@ -32,6 +32,7 @@ function boardmake() {
 
     const cards = document.createElement("div");
     cards.setAttribute("class", "cards");
+    cards.setAttribute("id", `${title.id}`);
     board.appendChild(cards);
 
     const addCardBtn = document.createElement("button");
@@ -54,11 +55,13 @@ function boardmake() {
 
       const title = document.createElement("input");
       title.setAttribute("class", "title");
+      title.placeholder = "Title";
       modal.appendChild(title);
 
       const description = document.createElement("input");
       description.setAttribute("class", "description");
       description.setAttribute("id", "description");
+      description.placeholder = "Description";
       modal.appendChild(description);
 
       const status = document.createElement("select");
@@ -75,22 +78,6 @@ function boardmake() {
       statusDone.innerText = "Done";
       status.appendChild(statusDone);
       modal.appendChild(status);
-
-      const qqqq = document.createElement("select");
-      qqqq.innerText = "choose";
-      const qq1 = document.createElement("option");
-      qq1.setAttribute("value", "qq1");
-      qq1.innerText = "qq1";
-      qqqq.appendChild(qq1);
-      const qq3 = document.createElement("option");
-      qq3.setAttribute("value", "qq3");
-      qq3.innerText = "qq3";
-      qqqq.appendChild(qq3);
-      const qq2 = document.createElement("option");
-      qq2.setAttribute("value", "qq2");
-      qq2.innerText = "qq2";
-      qqqq.appendChild(qq2);
-      modal.appendChild(qqqq);
 
       const priority = document.createElement("select");
       const priorityLow = document.createElement("option");
@@ -111,18 +98,47 @@ function boardmake() {
       addTaskBtn.innerText = "Add Task";
       modal.appendChild(addTaskBtn);
 
+      //
+      console.log(index + 1);
       addTaskBtn.addEventListener("click", () => {
         const card = document.createElement("div");
         card.setAttribute("class", "card");
+        card.setAttribute("id", `${index + 1}`);
         cards.appendChild(card);
 
         const cardTitle = document.createElement("h2");
         cardTitle.innerText = title.value;
         card.appendChild(cardTitle);
 
+        const deleteBtn = document.createElement("button");
+        deleteBtn.setAttribute("class", "deleteBtn");
+        card.appendChild(deleteBtn);
+
+        deleteBtn.addEventListener("click", () => {
+          const qwe = document.getElementById("qwerty");
+          qwe.remove();
+        });
+
         const cardDescription = document.createElement("p");
         cardDescription.innerText = description.value;
         card.appendChild(cardDescription);
+
+        const cardPriotity = document.createElement("p");
+        cardPriotity.innerText = priority.value;
+        card.appendChild(cardPriotity);
+
+        console.log("shbedjkhedeuyeuyfeuyfg");
+        if (status.value == "To do") {
+          todo.appendChild(card);
+        } else if (status.value == "In progress") {
+          inprogress.appendChild(card);
+        } else if (status.value == "Stuck") {
+          stuck.appendChild(card);
+        } else if (status.value == "Done") {
+          done.appendChild(card);
+        }
+        addCardDiv.style.display = "none";
+        // modal.style.display = "none";
       });
     });
   });
