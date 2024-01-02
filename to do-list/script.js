@@ -98,12 +98,10 @@ function boardmake() {
       addTaskBtn.innerText = "Add Task";
       modal.appendChild(addTaskBtn);
 
-      //
-      console.log(index + 1);
       addTaskBtn.addEventListener("click", () => {
         const card = document.createElement("div");
         card.setAttribute("class", "card");
-        card.setAttribute("id", `${index + 1}`);
+        card.setAttribute("id", `${index++}`);
         cards.appendChild(card);
 
         const cardTitle = document.createElement("h2");
@@ -112,11 +110,14 @@ function boardmake() {
 
         const deleteBtn = document.createElement("button");
         deleteBtn.setAttribute("class", "deleteBtn");
+        deleteBtn.setAttribute("id", `${index++}`);
         card.appendChild(deleteBtn);
 
         deleteBtn.addEventListener("click", () => {
-          const qwe = document.getElementById("qwerty");
-          qwe.remove();
+          const qwe = document.getElementById(deleteBtn.id);
+          if (deleteBtn.id == deleteBtn.id - 1) {
+            qwe.remove();
+          }
         });
 
         const cardDescription = document.createElement("p");
