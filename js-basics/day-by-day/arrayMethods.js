@@ -48,9 +48,9 @@ let numbers2 = [
   { a: 3, b: 5, c: 4 },
 ];
 let findByStock = numbers2.filter(function (a) {
-  return a.c == 3;
+  return a == 3;
 });
-console.log(findByStock);
+console.log("find by stock", findByStock);
 
 /////////////////////////////////////////
 var creatures = [
@@ -63,7 +63,7 @@ var aquaticCreatures = creatures.filter(function (creature) {
   return creature.habitat == "Ocean";
 });
 
-console.log(aquaticCreatures);
+console.log("aquatic", aquaticCreatures);
 ///////////////////////////////////////////
 //////////////////     map
 let nums = 0;
@@ -74,7 +74,7 @@ let numbers3 = [
   { a: 9, b: 6, c: 4 },
   { a: 3, b: 5, c: 4 },
 ];
-let findByA = numbers3.map((i) => {
-  return i.c == 4;
+let findByA = numbers3.map((a) => {
+  return a.c;
 });
-console.log(findByA);
+console.log("find by a", findByA);
